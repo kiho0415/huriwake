@@ -8,7 +8,7 @@
 
 import UIKit
 
-class kekkaViewController: UIViewController {
+class kekkaViewController: UIViewController,UITableViewDataSource {
     
     //ViewControllerから受け取るための変数
     var hazime: String = ""
@@ -22,14 +22,18 @@ class kekkaViewController: UIViewController {
     var kekkanumber: Int = 0
     var kekkaamari: Int = 0
     
+    //配列
+    var kekkaArray = [String]()
     
-    //結果を表示させるためのラベル
-    @IBOutlet var kekkaLabel: UILabel!
-    @IBOutlet var itinitiniTextView: UITextView!
+    //StoryBoadで使うtableViewを宣言
+    @IBOutlet var table:UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //テーブルビューのデータソースメッソドはViewCOntrollerのクラスに書くよ、という設定
+        table.dataSource = self
         
         
         if Int(hazime) != nil {
@@ -48,32 +52,43 @@ class kekkaViewController: UIViewController {
         kekkaamari = ( owarinumber - hazimenumber + 1 ) % nissuunumber
     
         
-        
+        //配列に結果を表示
         if kekkaamari == 0 {
             for i in 1...nissuunumber {
-                kekkaText += String("\n\(i)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
+                
+                kekkaArray.append("\(i)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
                 hazimenumber = hazimenumber + (kekkanumber - 1) + 1
             }
         }else{
             for k in 1...kekkaamari {
-                kekkaText += String("\n\(k)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber + 1 - 1))ページ")
+                kekkaArray.append("\(k)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber + 1 - 1))ページ")
                 hazimenumber = hazimenumber + (kekkanumber + 1 - 1) + 1
             }
             for m in kekkaamari + 1...nissuunumber {
-                 kekkaText += String("\n\(m)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
+                 kekkaArray.append("\(m)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
                 hazimenumber = hazimenumber + (kekkanumber - 1) + 1
             }
         }
-        
-        itinitiniTextView.text = kekkaText
-        
-       
-    
+        table.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //セルの数を設定
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return kekkaArray.count
+    }
+    
+    //ID付きのセルを取得して、セル付属のtextLabelに結果を表示させる
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+        cell?.textLabel?.text = kekkaArray[indexPath.row]
+        
+        return cell!
     }
     
     @IBAction func back() {

@@ -64,6 +64,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
                     style: UIAlertActionStyle.default,
                     handler: { action in
                         //ボタンが押されたときの動作
+                        print("OKボタンが押されました！")
                 }
                 )
             )
