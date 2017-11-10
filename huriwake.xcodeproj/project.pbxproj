@@ -12,6 +12,9 @@
 		F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D8B1F4960E900509A42 /* Main.storyboard */; };
 		F94F3D8F1F4960E900509A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D8E1F4960E900509A42 /* Assets.xcassets */; };
 		F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */; };
+		F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D991F49627900509A42 /* kekkaViewController.swift */; };
+		F94F3D9C1F497CE900509A42 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D9B1F497CE900509A42 /* haikei.png */; };
+		F9F67A301F59756D00E90DED /* RirekiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F94F3D8E1F4960E900509A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F94F3D911F4960E900509A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94F3D931F4960E900509A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94F3D991F49627900509A42 /* kekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kekkaViewController.swift; sourceTree = "<group>"; };
+		F94F3D9B1F497CE900509A42 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
+		F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RirekiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		F94F3D861F4960E900509A42 /* huriwake */ = {
 			isa = PBXGroup;
 			children = (
+				F94F3D9B1F497CE900509A42 /* haikei.png */,
 				F94F3D871F4960E900509A42 /* AppDelegate.swift */,
 				F94F3D891F4960E900509A42 /* ViewController.swift */,
 				F94F3D8B1F4960E900509A42 /* Main.storyboard */,
 				F94F3D8E1F4960E900509A42 /* Assets.xcassets */,
 				F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */,
 				F94F3D931F4960E900509A42 /* Info.plist */,
+				F94F3D991F49627900509A42 /* kekkaViewController.swift */,
+				F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */,
 			);
 			path = huriwake;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94F3D9C1F497CE900509A42 /* haikei.png in Resources */,
 				F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */,
 				F94F3D8F1F4960E900509A42 /* Assets.xcassets in Resources */,
 				F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */,
@@ -136,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */,
 				F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */,
+				F9F67A301F59756D00E90DED /* RirekiViewController.swift in Sources */,
 				F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +311,7 @@
 				F94F3D981F4960E900509A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
