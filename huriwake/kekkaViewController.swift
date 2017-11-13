@@ -16,11 +16,11 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     var nissuu: String = ""
     var kekkaText: String = ""
     
-    var hazimenumber: Int = 0
-    var owarinumber: Int = 0
-    var nissuunumber: Int = 1
-    var kekkanumber: Int = 0
-    var kekkaamari: Int = 0
+    var hnumber: Int = 0
+    var onumber: Int = 0
+    var nnumber: Int = 1
+    var knumber: Int = 0
+    var kamari: Int = 0
     
     //配列
     var kekkaArray = [String]()
@@ -37,36 +37,36 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
         
         
         if Int(hazime) != nil {
-            hazimenumber = Int(hazime)!
+            hnumber = Int(hazime)!
         }
         
         if Int(owari) != nil {
-            owarinumber = Int(owari)!
+            onumber = Int(owari)!
         }
         
         if Int(nissuu) != nil {
-            nissuunumber = Int(nissuu)!
+            nnumber = Int(nissuu)!
         }
        
-        kekkanumber = ( owarinumber - hazimenumber + 1 ) / nissuunumber
-        kekkaamari = ( owarinumber - hazimenumber + 1 ) % nissuunumber
+        knumber = ( onumber - hnumber + 1 ) / nnumber
+        kamari = ( onumber - hnumber + 1 ) % nnumber
     
         
         //配列に結果を表示
-        if kekkaamari == 0 {
-            for i in 1...nissuunumber {
+        if kamari == 0 {
+            for i in 1...nnumber {
                 
-                kekkaArray.append("\(i)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
-                hazimenumber = hazimenumber + (kekkanumber - 1) + 1
+                kekkaArray.append("\(i)日目 　\(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                hnumber = hnumber + (knumber - 1) + 1
             }
         }else{
-            for k in 1...kekkaamari {
-                kekkaArray.append("\(k)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber + 1 - 1))ページ")
-                hazimenumber = hazimenumber + (kekkanumber + 1 - 1) + 1
+            for k in 1...kamari {
+                kekkaArray.append("\(k)日目 　\(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
+                hnumber = hnumber + (knumber + 1 - 1) + 1
             }
-            for m in kekkaamari + 1...nissuunumber {
-                 kekkaArray.append("\(m)日目 　\(hazimenumber)〜\(hazimenumber + (kekkanumber - 1))ページ")
-                hazimenumber = hazimenumber + (kekkanumber - 1) + 1
+            for m in kamari + 1...nnumber {
+                 kekkaArray.append("\(m)日目 　\(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                hnumber = hnumber + (knumber - 1) + 1
             }
         }
         table.reloadData()
