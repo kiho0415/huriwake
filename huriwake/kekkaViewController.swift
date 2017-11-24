@@ -10,10 +10,10 @@ import UIKit
 
 class kekkaViewController: UIViewController,UITableViewDataSource {
     
-    //ViewControllerから受け取るための変数
     var hazime: String = ""
     var owari: String = ""
     var nissuu: String = ""
+    var kyozai: String = ""
     var kekkaText: String = ""
     
     var hnumber: Int = 0
@@ -28,10 +28,16 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     //StoryBoadで使うtableViewを宣言
     @IBOutlet var table:UITableView!
     
+    var saveData: UserDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //読み込み
+        kyozai = (saveData.object(forKey: "kyozai") as? String)!
+        hazime = (saveData.object(forKey: "hazime") as? String)!
+        owari = (saveData.object(forKey: "owari") as? String)!
+        nissuu = (saveData.object(forKey: "nissuu") as? String)!
         //テーブルビューのデータソースメッソドはViewCOntrollerのクラスに書くよ、という設定
         table.dataSource = self
         
@@ -56,16 +62,16 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
         if kamari == 0 {
             for i in 1...nnumber {
                 
-                kekkaArray.append("\(i)日目 　\(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                kekkaArray.append("\(i)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
                 hnumber = hnumber + (knumber - 1) + 1
             }
         }else{
             for k in 1...kamari {
-                kekkaArray.append("\(k)日目 　\(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
+                kekkaArray.append("\(k)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
                 hnumber = hnumber + (knumber + 1 - 1) + 1
             }
             for m in kamari + 1...nnumber {
-                 kekkaArray.append("\(m)日目 　\(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                 kekkaArray.append("\(m)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
                 hnumber = hnumber + (knumber - 1) + 1
             }
         }

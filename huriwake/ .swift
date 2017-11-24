@@ -22,6 +22,8 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet var nissuuTextField: UITextField!
     @IBOutlet var nitikannLabel: UILabel!
     
+    var saveData: UserDefaults = UserDefaults.standard
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +47,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+ 
     @IBAction func performSegueToResult(){
         hazime = hazimeTextField.text!
         print(hazime)
@@ -53,6 +55,8 @@ class ViewController: UIViewController,UITextFieldDelegate{
         print(owari)
         nissuu = nissuuTextField.text!
         print(nissuu)
+        kyozai = kyozaiTextField.text!
+        print(kyozai)
         
         if Int(hazime) == nil {
             //alartを出す
@@ -117,6 +121,12 @@ class ViewController: UIViewController,UITextFieldDelegate{
             present(alert, animated: true, completion: nil)
             
         }else{
+            //書き込み
+            saveData.set(kyozai, forKey: "kyozai")
+            saveData.set(hazime, forKey: "hazime")
+            saveData.set(owari, forKey: "owari")
+            saveData.set(nissuu, forKey: "nissuu")
+            //画面遷移
             performSegue(withIdentifier: "nyuuryoku", sender: nil)
         }
         
@@ -132,24 +142,6 @@ class ViewController: UIViewController,UITextFieldDelegate{
         owariTextField.text = String(owari)
         nissuuTextField.text = String(nissuu)
         
-    }
-    
-    @IBAction func rireki(){
-        
-    }
-    
-    //Segueで遷移するときのメソッド
-    //hazimeの受け渡し
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let kekkaViewController:kekkaViewController = segue.destination as! kekkaViewController
-        
-        kekkaViewController.hazime = self.hazime
-        
-        //owariの受け渡し
-        kekkaViewController.owari = self.owari
-        //nissuuの受け渡し
-        kekkaViewController.nissuu = self.nissuu
     }
     
 }
