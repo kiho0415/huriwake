@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8229F409F7EC5CB11C29E7B2 /* Pods_huriwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */; };
 		F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D871F4960E900509A42 /* AppDelegate.swift */; };
 		F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D891F4960E900509A42 /* ViewController.swift */; };
 		F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D8B1F4960E900509A42 /* Main.storyboard */; };
@@ -14,10 +15,13 @@
 		F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */; };
 		F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D991F49627900509A42 /* kekkaViewController.swift */; };
 		F94F3D9C1F497CE900509A42 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D9B1F497CE900509A42 /* haikei.png */; };
-		F9F67A301F59756D00E90DED /* RirekiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */; };
+		F992D0E91FDAA88F00C9B0ED /* karendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_huriwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.debug.xcconfig"; sourceTree = "<group>"; };
+		52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.release.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.release.xcconfig"; sourceTree = "<group>"; };
 		F94F3D841F4960E900509A42 /* huriwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huriwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94F3D871F4960E900509A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94F3D891F4960E900509A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +31,7 @@
 		F94F3D931F4960E900509A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94F3D991F49627900509A42 /* kekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kekkaViewController.swift; sourceTree = "<group>"; };
 		F94F3D9B1F497CE900509A42 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
-		F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RirekiViewController.swift; sourceTree = "<group>"; };
+		F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karendaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8229F409F7EC5CB11C29E7B2 /* Pods_huriwake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		566C35D7047D9B69D2DA6F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */,
+				52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8FE8EB2D73BAB11BAD6BB0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F94F3D7B1F4960E900509A42 = {
 			isa = PBXGroup;
 			children = (
 				F94F3D861F4960E900509A42 /* huriwake */,
 				F94F3D851F4960E900509A42 /* Products */,
+				F8FE8EB2D73BAB11BAD6BB0D /* Frameworks */,
+				566C35D7047D9B69D2DA6F10 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +87,12 @@
 				F94F3D9B1F497CE900509A42 /* haikei.png */,
 				F94F3D871F4960E900509A42 /* AppDelegate.swift */,
 				F94F3D891F4960E900509A42 /* ViewController.swift */,
+				F94F3D991F49627900509A42 /* kekkaViewController.swift */,
 				F94F3D8B1F4960E900509A42 /* Main.storyboard */,
 				F94F3D8E1F4960E900509A42 /* Assets.xcassets */,
 				F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */,
 				F94F3D931F4960E900509A42 /* Info.plist */,
-				F94F3D991F49627900509A42 /* kekkaViewController.swift */,
-				F9F67A2F1F59756D00E90DED /* RirekiViewController.swift */,
+				F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */,
 			);
 			path = huriwake;
 			sourceTree = "<group>";
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F94F3D961F4960E900509A42 /* Build configuration list for PBXNativeTarget "huriwake" */;
 			buildPhases = (
+				A47B36787058A90AA0AF1DD5 /* [CP] Check Pods Manifest.lock */,
 				F94F3D801F4960E900509A42 /* Sources */,
 				F94F3D811F4960E900509A42 /* Frameworks */,
 				F94F3D821F4960E900509A42 /* Resources */,
+				5E843ACEABAF1934274E210F /* [CP] Embed Pods Frameworks */,
+				79C2550EBCDFF6CEA2F9F9DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,11 +127,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "森田貴帆";
 				TargetAttributes = {
 					F94F3D831F4960E900509A42 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,6 +169,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E843ACEABAF1934274E210F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-huriwake/Pods-huriwake-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-huriwake/Pods-huriwake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C2550EBCDFF6CEA2F9F9DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-huriwake/Pods-huriwake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47B36787058A90AA0AF1DD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-huriwake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F94F3D801F4960E900509A42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,8 +230,8 @@
 			files = (
 				F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */,
 				F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */,
-				F9F67A301F59756D00E90DED /* RirekiViewController.swift in Sources */,
 				F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */,
+				F992D0E91FDAA88F00C9B0ED /* karendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +267,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -193,7 +277,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -222,6 +310,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -235,7 +324,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -243,7 +334,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,31 +359,36 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F94F3D971F4960E900509A42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		F94F3D981F4960E900509A42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

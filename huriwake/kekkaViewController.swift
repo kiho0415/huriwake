@@ -22,8 +22,9 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     var knumber: Int = 0
     var kamari: Int = 0
     
-    //配列
-    var kekkaArray = [String]()
+    //辞書を作る
+    var kekkazisyo : [String:String] = [:]
+    var kekkaArray: [String] = []
     
     //StoryBoadで使うtableViewを宣言
     @IBOutlet var table:UITableView!

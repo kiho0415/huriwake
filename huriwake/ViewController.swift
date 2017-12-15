@@ -22,9 +22,10 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet var nissuuTextField: UITextField!
     @IBOutlet var nitikannLabel: UILabel!
     
+    
     var saveData: UserDefaults = UserDefaults.standard
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,7 +37,6 @@ class ViewController: UIViewController,UITextFieldDelegate{
         self.kyozaiTextField.placeholder = "教材名を入力してください";
         
     }
-    
     //キーボードが自動的に閉じるようにする
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -47,7 +47,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
- 
+    
     @IBAction func performSegueToResult(){
         hazime = hazimeTextField.text!
         print(hazime)
