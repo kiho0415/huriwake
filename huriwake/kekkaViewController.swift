@@ -12,13 +12,12 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     
     var hazime: String = ""
     var owari: String = ""
-    var nissuu: String = ""
     var kyozai: String = ""
     var kekkaText: String = ""
     
     var hnumber: Int = 0
     var onumber: Int = 0
-    var nnumber: Int = 1
+    var nissuu: Int = 1
     var knumber: Int = 0
     var kamari: Int = 0
     
@@ -38,7 +37,7 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
         kyozai = (saveData.object(forKey: "kyozai") as? String)!
         hazime = (saveData.object(forKey: "hazime") as? String)!
         owari = (saveData.object(forKey: "owari") as? String)!
-        nissuu = (saveData.object(forKey: "nissuu") as? String)!
+        nissuu = (saveData.object(forKey: "nissuu") as? Int)!
         //テーブルビューのデータソースメッソドはViewCOntrollerのクラスに書くよ、という設定
         table.dataSource = self
         
@@ -51,17 +50,13 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
             onumber = Int(owari)!
         }
         
-        if Int(nissuu) != nil {
-            nnumber = Int(nissuu)!
-        }
-       
-        knumber = ( onumber - hnumber + 1 ) / nnumber
-        kamari = ( onumber - hnumber + 1 ) % nnumber
+        knumber = ( onumber - hnumber + 1 ) / nissuu
+        kamari = ( onumber - hnumber + 1 ) % nissuu
     
         
         //配列に結果を表示
         if kamari == 0 {
-            for i in 1...nnumber {
+            for i in 1...nissuu {
                 
                 kekkaArray.append("\(i)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
                 hnumber = hnumber + (knumber - 1) + 1
@@ -71,7 +66,7 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
                 kekkaArray.append("\(k)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
                 hnumber = hnumber + (knumber + 1 - 1) + 1
             }
-            for m in kamari + 1...nnumber {
+            for m in kamari + 1...nissuu {
                  kekkaArray.append("\(m)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
                 hnumber = hnumber + (knumber - 1) + 1
             }

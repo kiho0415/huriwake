@@ -8,47 +8,39 @@
 
 import UIKit
 //cocoapodの読み込み
-import JBDatePicker
+import FSCalendar
 
 
-class karendaViewController: UIViewController,JBDatePickerViewDelegate {
+class karendaViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+    
+    @IBOutlet var calendar:FSCalendar!
+    var nissuu: Int = 0
+    
+    var saveData: UserDefaults = UserDefaults.standard
     
     
-    func didSelectDay(_ dayView: JBDatePickerDayView) {
-        print("date selected: \(dateFormatter.string(from: dayView.date!))")
-    }
-    
-    @IBOutlet var datePicker: JBDatePickerView!
-    
-    lazy var dateFormatter: DateFormatter = {
-        var formatter = DateFormatter()
-        formatter.timeStyle = .none
-        formatter.dateStyle = .medium
-        return formatter
-    }()
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        datePicker.delegate = self //この行を追加
-    
-        func didSelectDay(_ dayView: JBDatePickerDayView) {
-            print("date selected: \(dayView.date!)")
-            
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        calendar.delegate = self
+        calendar.dataSource = self
+        calendar.swipeToChooseGesture.isEnabled = true
+        calendar.allowsMultipleSelection = true
         
-        datePicker.updateLayout()
     }
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        print(calendar.selectedDates.count)
+        nissuu = calendar.selectedDates.count
+    }
+    
+    @IBAction func performSegueTofirst(_ sender:UIButton){
+        //書き込み
+        saveData.set(nissuu, forKey: "nissuu")
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 
     /*
