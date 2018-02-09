@@ -18,28 +18,29 @@ class ViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet var hazimepLabel: UILabel!
     @IBOutlet var owariTextField: UITextField!
     @IBOutlet var owaripLabel: UILabel!
-    @IBOutlet var nissuuTextField: UITextField!
-   
-    
-    
-    var saveData: UserDefaults = UserDefaults.standard
-    
+    @IBOutlet var nissuLabel: UILabel!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
         self.kyozaiTextField.delegate = self
         self.hazimeTextField.delegate = self
         self.owariTextField.delegate = self
-        self.nissuuTextField.delegate = self
+      
         
-        self.kyozaiTextField.placeholder = "教材名を入力してください";
+        //あらかじめ入力しておくテキスト
+        self.kyozaiTextField.placeholder = "タップして教材名を入力";
+        self.hazimeTextField.placeholder = "tap"; //⇦変える
+        self.owariTextField.placeholder = "tap"; //⇦変える
         
     }
     //カレンダーから戻ってきたときに選択した日数を表示
     override func viewWillAppear(_ animated: Bool) {
-        nissuu = (saveData.object(forKey: "nissuu") as? Int)!
-        nissuuTextField.text = "\(String(nissuu))日間選択中"
+        //ここで日数を取り出してた
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        nissuu = appDelegate.selectedDates.count
+
     }
     //キーボードが自動的に閉じるようにする
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -49,75 +50,62 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func performSegueToResult(){
         hazime = hazimeTextField.text!
-        print(hazime)
+        //print(hazime)
         owari = owariTextField.text!
-        print(owari)
+        //print(owari)
         kyozai = kyozaiTextField.text!
-        print(kyozai)
+        //print(kyozai)
         
         if Int(hazime) == nil {
-            //alartを出す
             let alert: UIAlertController = UIAlertController(title: "警告",message: "数字を入力してください。",preferredStyle: .alert)
-            //OKボタン
             alert.addAction(
                 UIAlertAction(
                     title: "OK",
                     style: UIAlertActionStyle.default,
                     handler: { action in
-                        //ボタンが押されたときの動作
-                        print("OKボタンが押されました！")
+                        //print("OKボタンが押されました！")
                 }
                 )
             )
             present(alert, animated: true, completion: nil)
         }else if Int(owari) == nil {
-            //alartを出す
             let alert: UIAlertController = UIAlertController(title: "警告",message: "数字を入力してください。",preferredStyle: .alert)
-            //OKボタン
             alert.addAction(
                 UIAlertAction(
                     title: "OK",
                     style: UIAlertActionStyle.default,
                     handler: { action in
-                        //ボタンが押されたときの動作
-                        print("OKボタンが押されました！")
+                        //print("OKボタンが押されました！")
                 }
                 )
             )
             present(alert, animated: true, completion: nil)
             
         }else if Int(hazime)! > Int(owari)! {
-            //alartを出す
             let alert: UIAlertController = UIAlertController(title: "警告",message: "ページ数を正しく入力してください。",preferredStyle: .alert)
-            //OKボタン
             alert.addAction(
                 UIAlertAction(
                     title: "OK",
                     style: UIAlertActionStyle.default,
                     handler: { action in
-                        //ボタンが押されたときの動作
-                        print("OKボタンが押されました！")
+                        //print("OKボタンが押されました！")
                 }
                 )
             )
             present(alert, animated: true, completion: nil)
             
         }else if nissuu == 0 {
-            //alartを出す
             let alert: UIAlertController = UIAlertController(title: "警告",message: "日付を選択してください。",preferredStyle: .alert)
-            //OKボタン
             alert.addAction(
                 UIAlertAction(
                     title: "OK",
                     style: UIAlertActionStyle.default,
                     handler: { action in
-                        //ボタンが押されたときの動作
-                        print("OKボタンが押されました！")
+                        //print("OKボタンが押されました！")
                 }
                 )
             )
@@ -125,11 +113,10 @@ class ViewController: UIViewController,UITextFieldDelegate{
            
             
         }else{
-            //書き込み
-            saveData.set(kyozai, forKey: "kyozai")
-            saveData.set(hazime, forKey: "hazime")
-            saveData.set(owari, forKey: "owari")
             //画面遷移
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.hazime = hazime
+            appDelegate.owari = owari
             performSegue(withIdentifier: "nyuuryoku", sender: nil)
         }
         
@@ -143,8 +130,9 @@ class ViewController: UIViewController,UITextFieldDelegate{
         kyozaiTextField.text = String(kyozai)
         hazimeTextField.text = String(hazime)
         owariTextField.text = String(owari)
-        nissuuTextField.text = String(nissuu)
+        nissuLabel.text = "0日間選択中"
     }
     
 }
+
 

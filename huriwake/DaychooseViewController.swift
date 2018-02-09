@@ -1,5 +1,5 @@
 //
-//  karendaViewController.swift
+//  DaychooseViewController.swift
 //  huriwake
 //
 //  Created by 森田貴帆 on 2017/12/08.
@@ -11,13 +11,9 @@ import UIKit
 import FSCalendar
 
 
-class karendaViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+class DaychooseViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
     @IBOutlet var calendar:FSCalendar!
-    var nissuu: Int = 0
-    
-    var saveData: UserDefaults = UserDefaults.standard
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +23,17 @@ class karendaViewController: UIViewController, FSCalendarDelegate, FSCalendarDat
         calendar.swipeToChooseGesture.isEnabled = true
         calendar.allowsMultipleSelection = true
         
+        
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print(calendar.selectedDates.count)
-        nissuu = calendar.selectedDates.count
     }
     
     @IBAction func performSegueTofirst(_ sender:UIButton){
-        //書き込み
-        saveData.set(nissuu, forKey: "nissuu")
         
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.selectedDates = calendar.selectedDates.sorted()
+        print("選択した日数：\(calendar.selectedDates.sorted())")
         dismiss(animated: true, completion: nil)
     }
     

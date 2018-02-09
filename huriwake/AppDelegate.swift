@@ -11,6 +11,9 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var selectedDates:[Date] = []
+    var hazime: String = ""
+    var owari: String = ""
     var window: UIWindow?
 
 

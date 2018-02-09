@@ -21,8 +21,8 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     var knumber: Int = 0
     var kamari: Int = 0
     
-    //辞書を作る
-    var kekkazisyo : [String:String] = [:]
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     var kekkaArray: [String] = []
     
     //StoryBoadで使うtableViewを宣言
@@ -33,14 +33,11 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //読み込み
-        kyozai = (saveData.object(forKey: "kyozai") as? String)!
-        hazime = (saveData.object(forKey: "hazime") as? String)!
-        owari = (saveData.object(forKey: "owari") as? String)!
-        nissuu = (saveData.object(forKey: "nissuu") as? Int)!
-        //テーブルビューのデータソースメッソドはViewCOntrollerのクラスに書くよ、という設定
-        table.dataSource = self
+        hazime = appDelegate.hazime
+        owari = appDelegate.owari
+        nissuu = appDelegate.selectedDates.count
         
+        table.dataSource = self
         
         if Int(hazime) != nil {
             hnumber = Int(hazime)!
@@ -57,21 +54,48 @@ class kekkaViewController: UIViewController,UITableViewDataSource {
         //配列に結果を表示
         if kamari == 0 {
             for i in 1...nissuu {
-                
-                kekkaArray.append("\(i)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy/MM/dd"
+                dateFormatter.string(from: appDelegate.selectedDates[i-1])
+                kekkaArray.append("\(dateFormatter.string(from: appDelegate.selectedDates[i-1])) 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                //保存
+                let result = Result()
+                result.date = appDelegate.selectedDates[i-1]
+                result.subjectname = kyozai
+                result.startpage = hnumber
+                result.endpage = hnumber + (knumber - 1)
+                result.save()
                 hnumber = hnumber + (knumber - 1) + 1
             }
+            
         }else{
             for k in 1...kamari {
-                kekkaArray.append("\(k)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
+                kekkaArray.append("\(appDelegate.selectedDates[k-1])\(kyozai) \(hnumber)〜\(hnumber + (knumber + 1 - 1))ページ")
                 hnumber = hnumber + (knumber + 1 - 1) + 1
+                //保存
+                let result = Result()
+                result.date = appDelegate.selectedDates[k-1]
+                result.subjectname = kyozai
+                result.startpage = hnumber
+                result.endpage = hnumber + (knumber - 1)
+                result.save()
+                hnumber = hnumber + (knumber - 1) + 1
             }
             for m in kamari + 1...nissuu {
-                 kekkaArray.append("\(m)日目 　\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                 kekkaArray.append("\(appDelegate.selectedDates[m-1])\(kyozai) \(hnumber)〜\(hnumber + (knumber - 1))ページ")
+                hnumber = hnumber + (knumber - 1) + 1
+                //保存
+                let result = Result()
+                result.date = appDelegate.selectedDates[m-1]
+                result.subjectname = kyozai
+                result.startpage = hnumber
+                result.endpage = hnumber + (knumber - 1)
+                result.save()
                 hnumber = hnumber + (knumber - 1) + 1
             }
         }
         table.reloadData()
+    
     }
     
     override func didReceiveMemoryWarning() {

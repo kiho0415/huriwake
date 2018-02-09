@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8229F409F7EC5CB11C29E7B2 /* Pods_huriwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */; };
+		F935554B201200DE00268ECE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935554A201200DE00268ECE /* Result.swift */; };
 		F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D871F4960E900509A42 /* AppDelegate.swift */; };
 		F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D891F4960E900509A42 /* ViewController.swift */; };
 		F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D8B1F4960E900509A42 /* Main.storyboard */; };
@@ -15,13 +16,15 @@
 		F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */; };
 		F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D991F49627900509A42 /* kekkaViewController.swift */; };
 		F94F3D9C1F497CE900509A42 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = F94F3D9B1F497CE900509A42 /* haikei.png */; };
-		F992D0E91FDAA88F00C9B0ED /* karendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */; };
+		F971317F201A14C300FAD8AD /* CallenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971317E201A14C300FAD8AD /* CallenderViewController.swift */; };
+		F992D0E91FDAA88F00C9B0ED /* DaychooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992D0E81FDAA88F00C9B0ED /* DaychooseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_huriwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.debug.xcconfig"; sourceTree = "<group>"; };
 		52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.release.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.release.xcconfig"; sourceTree = "<group>"; };
+		F935554A201200DE00268ECE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F94F3D841F4960E900509A42 /* huriwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huriwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94F3D871F4960E900509A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94F3D891F4960E900509A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +34,8 @@
 		F94F3D931F4960E900509A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94F3D991F49627900509A42 /* kekkaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kekkaViewController.swift; sourceTree = "<group>"; };
 		F94F3D9B1F497CE900509A42 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
-		F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = karendaViewController.swift; sourceTree = "<group>"; };
+		F971317E201A14C300FAD8AD /* CallenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallenderViewController.swift; sourceTree = "<group>"; };
+		F992D0E81FDAA88F00C9B0ED /* DaychooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaychooseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,9 @@
 				F94F3D8E1F4960E900509A42 /* Assets.xcassets */,
 				F94F3D901F4960E900509A42 /* LaunchScreen.storyboard */,
 				F94F3D931F4960E900509A42 /* Info.plist */,
-				F992D0E81FDAA88F00C9B0ED /* karendaViewController.swift */,
+				F992D0E81FDAA88F00C9B0ED /* DaychooseViewController.swift */,
+				F935554A201200DE00268ECE /* Result.swift */,
+				F971317E201A14C300FAD8AD /* CallenderViewController.swift */,
 			);
 			path = huriwake;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 				TargetAttributes = {
 					F94F3D831F4960E900509A42 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F9X9VCT8TE;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -178,10 +185,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-huriwake/Pods-huriwake-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94F3D9A1F49627900509A42 /* kekkaViewController.swift in Sources */,
+				F935554B201200DE00268ECE /* Result.swift in Sources */,
 				F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */,
+				F971317F201A14C300FAD8AD /* CallenderViewController.swift in Sources */,
 				F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */,
-				F992D0E91FDAA88F00C9B0ED /* karendaViewController.swift in Sources */,
+				F992D0E91FDAA88F00C9B0ED /* DaychooseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +382,7 @@
 			baseConfigurationReference = 38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9X9VCT8TE;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
@@ -383,6 +397,7 @@
 			baseConfigurationReference = 52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9X9VCT8TE;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
