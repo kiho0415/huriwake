@@ -11,6 +11,7 @@ import RealmSwift
 class Result: Object {
     static let realm = try! Realm()
     
+    @objc dynamic var id: String = ""
     @objc dynamic var date: Date = Date()
     @objc dynamic var subjectname: String = ""
     @objc dynamic var startpage: Int = 0
@@ -18,6 +19,16 @@ class Result: Object {
 
     static func loadAll() -> [Result] {
         let results = realm.objects(Result.self)
+        var ret: [Result] = []
+        for result in results {
+            
+            ret.append(result)
+        }
+        return ret
+    }
+    
+    static func loadAllOfDate(date: Date) -> [Result] {
+        let results = realm.objects(Result.self).filter("date = %@",date)
         var ret: [Result] = []
         for result in results {
             
@@ -49,6 +60,15 @@ class Result: Object {
             Result.realm.delete(self)
         }
         
+    }
+    
+    static func deleteFromId(selectedId: String) {
+        
+        let results = Result.realm.objects(Result.self).filter("id = %@",selectedId)
+        try! Result.realm.write {
+            
+            Result.realm.delete(results)
+        }
     }
     
 }

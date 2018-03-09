@@ -14,6 +14,7 @@ import FSCalendar
 class DaychooseViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
     @IBOutlet var calendar:FSCalendar!
+    @IBOutlet var okbutton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,8 @@ class DaychooseViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         calendar.swipeToChooseGesture.isEnabled = true
         calendar.allowsMultipleSelection = true
         
-        
+        //ボタンデザイン
+        okbutton.layer.cornerRadius = 20
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
@@ -33,7 +35,7 @@ class DaychooseViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.selectedDates = calendar.selectedDates.sorted()
-        print("選択した日数：\(calendar.selectedDates.sorted())")
+        //print("選択した日数：\(calendar.selectedDates.sorted())")
         dismiss(animated: true, completion: nil)
     }
     

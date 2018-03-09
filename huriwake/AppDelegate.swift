@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var selectedDates:[Date] = []
     var hazime: String = ""
     var owari: String = ""
+    var subjectname: String = ""
     var window: UIWindow?
 
 

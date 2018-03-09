@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8229F409F7EC5CB11C29E7B2 /* Pods_huriwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */; };
+		F923757420525D590024436E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F923757320525D580024436E /* icon.png */; };
+		F923757A205285D30024436E /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9237579205285D30024436E /* icon1.png */; };
+		F923757C2052868E0024436E /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F923757B2052868E0024436E /* icon2.png */; };
 		F935554B201200DE00268ECE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935554A201200DE00268ECE /* Result.swift */; };
 		F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D871F4960E900509A42 /* AppDelegate.swift */; };
 		F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D891F4960E900509A42 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		1E9784C5040ACB29D17496A9 /* Pods_huriwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_huriwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.debug.xcconfig"; sourceTree = "<group>"; };
 		52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-huriwake.release.xcconfig"; path = "Pods/Target Support Files/Pods-huriwake/Pods-huriwake.release.xcconfig"; sourceTree = "<group>"; };
+		F923757320525D580024436E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F9237579205285D30024436E /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		F923757B2052868E0024436E /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		F935554A201200DE00268ECE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F94F3D841F4960E900509A42 /* huriwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huriwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94F3D871F4960E900509A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 		F94F3D861F4960E900509A42 /* huriwake */ = {
 			isa = PBXGroup;
 			children = (
+				F923757B2052868E0024436E /* icon2.png */,
+				F9237579205285D30024436E /* icon1.png */,
+				F923757320525D580024436E /* icon.png */,
 				F94F3D9B1F497CE900509A42 /* haikei.png */,
 				F94F3D871F4960E900509A42 /* AppDelegate.swift */,
 				F94F3D891F4960E900509A42 /* ViewController.swift */,
@@ -168,8 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94F3D9C1F497CE900509A42 /* haikei.png in Resources */,
+				F923757420525D590024436E /* icon.png in Resources */,
+				F923757A205285D30024436E /* icon1.png in Resources */,
 				F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */,
 				F94F3D8F1F4960E900509A42 /* Assets.xcassets in Resources */,
+				F923757C2052868E0024436E /* icon2.png in Resources */,
 				F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +397,7 @@
 				DEVELOPMENT_TEAM = F9X9VCT8TE;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.huriwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -400,7 +412,7 @@
 				DEVELOPMENT_TEAM = F9X9VCT8TE;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.huriwake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.huriwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
