@@ -33,8 +33,13 @@ class ViewController: UIViewController,UITextFieldDelegate{
 
         //ボタンデザイン
         huriwakebutton.layer.cornerRadius = 20
-        datebutton.layer.borderColor = UIColor.gray.cgColor
+        datebutton.layer.borderColor = UIColor.black.cgColor
         datebutton.layer.borderWidth = 1.0
+        kyozaiTextField.layer.borderColor = UIColor.lightGray.cgColor
+        hazimeTextField.layer.borderColor = UIColor.lightGray.cgColor
+        owariTextField.layer.borderColor = UIColor.lightGray.cgColor
+        clearbutton.layer.cornerRadius = 20
+        
         //あらかじめ入力しておくテキスト
         self.kyozaiTextField.placeholder = "タップして入力";
         self.hazimeTextField.placeholder = "0";
@@ -151,7 +156,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         kyozaiTextField.text = String(kyozai)
         hazimeTextField.text = String(hazime)
         owariTextField.text = String(owari)
-        nissuLabel.text = "0日間選択中"
+        nissuLabel.text = ""
     }
     
 }

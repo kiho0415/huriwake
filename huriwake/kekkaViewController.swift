@@ -46,6 +46,8 @@ class kekkaViewController: UIViewController,UITableViewDataSource,UITableViewDel
         nissuu = appDelegate.selectedDates.count
         kyozai = appDelegate.subjectname
         
+        table.tableFooterView = UIView()
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMddhhmmss"
         id = dateFormatter.string(from: Date())

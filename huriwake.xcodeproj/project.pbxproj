@@ -11,6 +11,32 @@
 		F923757420525D590024436E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F923757320525D580024436E /* icon.png */; };
 		F923757A205285D30024436E /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9237579205285D30024436E /* icon1.png */; };
 		F923757C2052868E0024436E /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F923757B2052868E0024436E /* icon2.png */; };
+		F92375842052DE340024436E /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92375832052DE340024436E /* MyTabBarController.swift */; };
+		F92375A42057A3670024436E /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375882057A3670024436E /* Icon-App-57x57@1x.png */; };
+		F92375A52057A3670024436E /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375892057A3670024436E /* Icon-App-76x76@2x.png */; };
+		F92375A62057A3670024436E /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758A2057A3670024436E /* Icon-App-29x29@1x.png */; };
+		F92375A72057A3670024436E /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758B2057A3670024436E /* Icon-App-60x60@1x.png */; };
+		F92375A82057A3670024436E /* Icon-Small-50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758C2057A3670024436E /* Icon-Small-50x50@2x.png */; };
+		F92375A92057A3670024436E /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758D2057A3670024436E /* Icon-App-40x40@1x.png */; };
+		F92375AA2057A3670024436E /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758E2057A3670024436E /* Icon-App-76x76@3x.png */; };
+		F92375AB2057A3670024436E /* Icon-App-72x72@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923758F2057A3670024436E /* Icon-App-72x72@1x.png */; };
+		F92375AC2057A3670024436E /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375902057A3670024436E /* Icon-App-20x20@1x.png */; };
+		F92375AD2057A3670024436E /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375912057A3670024436E /* Icon-App-83.5x83.5@2x.png */; };
+		F92375AE2057A3670024436E /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375922057A3670024436E /* Icon-App-20x20@3x.png */; };
+		F92375AF2057A3670024436E /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375932057A3670024436E /* ItunesArtwork@2x.png */; };
+		F92375B02057A3670024436E /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F92375942057A3670024436E /* Contents.json */; };
+		F92375B12057A3670024436E /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375952057A3670024436E /* Icon-App-20x20@2x.png */; };
+		F92375B22057A3670024436E /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375962057A3670024436E /* Icon-App-29x29@3x.png */; };
+		F92375B32057A3670024436E /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375972057A3670024436E /* Icon-App-40x40@2x.png */; };
+		F92375B42057A3670024436E /* Icon-App-72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375982057A3670024436E /* Icon-App-72x72@2x.png */; };
+		F92375B52057A3670024436E /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92375992057A3670024436E /* Icon-App-60x60@3x.png */; };
+		F92375B62057A3670024436E /* Icon-Small-50x50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759A2057A3670024436E /* Icon-Small-50x50@1x.png */; };
+		F92375B72057A3670024436E /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759B2057A3670024436E /* Icon-App-60x60@2x.png */; };
+		F92375B82057A3670024436E /* Icon-App-57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759C2057A3670024436E /* Icon-App-57x57@2x.png */; };
+		F92375B92057A3670024436E /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759D2057A3670024436E /* Icon-App-76x76@1x.png */; };
+		F92375BA2057A3670024436E /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759E2057A3670024436E /* Icon-App-40x40@3x.png */; };
+		F92375BB2057A3670024436E /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F923759F2057A3670024436E /* Icon-App-29x29@2x.png */; };
+		F92375BC2057A3670024436E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F92375A02057A3670024436E /* README.md */; };
 		F935554B201200DE00268ECE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935554A201200DE00268ECE /* Result.swift */; };
 		F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D871F4960E900509A42 /* AppDelegate.swift */; };
 		F94F3D8A1F4960E900509A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94F3D891F4960E900509A42 /* ViewController.swift */; };
@@ -30,6 +56,32 @@
 		F923757320525D580024436E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F9237579205285D30024436E /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		F923757B2052868E0024436E /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		F92375832052DE340024436E /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		F92375882057A3670024436E /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
+		F92375892057A3670024436E /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		F923758A2057A3670024436E /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		F923758B2057A3670024436E /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		F923758C2057A3670024436E /* Icon-Small-50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@2x.png"; sourceTree = "<group>"; };
+		F923758D2057A3670024436E /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		F923758E2057A3670024436E /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		F923758F2057A3670024436E /* Icon-App-72x72@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@1x.png"; sourceTree = "<group>"; };
+		F92375902057A3670024436E /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		F92375912057A3670024436E /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		F92375922057A3670024436E /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		F92375932057A3670024436E /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		F92375942057A3670024436E /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F92375952057A3670024436E /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		F92375962057A3670024436E /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		F92375972057A3670024436E /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		F92375982057A3670024436E /* Icon-App-72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@2x.png"; sourceTree = "<group>"; };
+		F92375992057A3670024436E /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		F923759A2057A3670024436E /* Icon-Small-50x50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png"; sourceTree = "<group>"; };
+		F923759B2057A3670024436E /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		F923759C2057A3670024436E /* Icon-App-57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@2x.png"; sourceTree = "<group>"; };
+		F923759D2057A3670024436E /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		F923759E2057A3670024436E /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		F923759F2057A3670024436E /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		F92375A02057A3670024436E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F935554A201200DE00268ECE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F94F3D841F4960E900509A42 /* huriwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huriwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94F3D871F4960E900509A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +125,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F92375852057A3670024436E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F92375872057A3670024436E /* AppIcon.appiconset */,
+				F92375A02057A3670024436E /* README.md */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F92375872057A3670024436E /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				F92375882057A3670024436E /* Icon-App-57x57@1x.png */,
+				F92375892057A3670024436E /* Icon-App-76x76@2x.png */,
+				F923758A2057A3670024436E /* Icon-App-29x29@1x.png */,
+				F923758B2057A3670024436E /* Icon-App-60x60@1x.png */,
+				F923758C2057A3670024436E /* Icon-Small-50x50@2x.png */,
+				F923758D2057A3670024436E /* Icon-App-40x40@1x.png */,
+				F923758E2057A3670024436E /* Icon-App-76x76@3x.png */,
+				F923758F2057A3670024436E /* Icon-App-72x72@1x.png */,
+				F92375902057A3670024436E /* Icon-App-20x20@1x.png */,
+				F92375912057A3670024436E /* Icon-App-83.5x83.5@2x.png */,
+				F92375922057A3670024436E /* Icon-App-20x20@3x.png */,
+				F92375932057A3670024436E /* ItunesArtwork@2x.png */,
+				F92375942057A3670024436E /* Contents.json */,
+				F92375952057A3670024436E /* Icon-App-20x20@2x.png */,
+				F92375962057A3670024436E /* Icon-App-29x29@3x.png */,
+				F92375972057A3670024436E /* Icon-App-40x40@2x.png */,
+				F92375982057A3670024436E /* Icon-App-72x72@2x.png */,
+				F92375992057A3670024436E /* Icon-App-60x60@3x.png */,
+				F923759A2057A3670024436E /* Icon-Small-50x50@1x.png */,
+				F923759B2057A3670024436E /* Icon-App-60x60@2x.png */,
+				F923759C2057A3670024436E /* Icon-App-57x57@2x.png */,
+				F923759D2057A3670024436E /* Icon-App-76x76@1x.png */,
+				F923759E2057A3670024436E /* Icon-App-40x40@3x.png */,
+				F923759F2057A3670024436E /* Icon-App-29x29@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		F94F3D7B1F4960E900509A42 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +189,9 @@
 				F923757B2052868E0024436E /* icon2.png */,
 				F9237579205285D30024436E /* icon1.png */,
 				F923757320525D580024436E /* icon.png */,
+				F92375852057A3670024436E /* ios */,
 				F94F3D9B1F497CE900509A42 /* haikei.png */,
+				F92375832052DE340024436E /* MyTabBarController.swift */,
 				F94F3D871F4960E900509A42 /* AppDelegate.swift */,
 				F94F3D891F4960E900509A42 /* ViewController.swift */,
 				F94F3D991F49627900509A42 /* kekkaViewController.swift */,
@@ -147,7 +241,7 @@
 				TargetAttributes = {
 					F94F3D831F4960E900509A42 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = F9X9VCT8TE;
+						DevelopmentTeam = ZVZD8MF8UT;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -178,11 +272,36 @@
 			files = (
 				F94F3D9C1F497CE900509A42 /* haikei.png in Resources */,
 				F923757420525D590024436E /* icon.png in Resources */,
+				F92375AA2057A3670024436E /* Icon-App-76x76@3x.png in Resources */,
+				F92375A52057A3670024436E /* Icon-App-76x76@2x.png in Resources */,
+				F92375BB2057A3670024436E /* Icon-App-29x29@2x.png in Resources */,
+				F92375A42057A3670024436E /* Icon-App-57x57@1x.png in Resources */,
+				F92375AE2057A3670024436E /* Icon-App-20x20@3x.png in Resources */,
+				F92375B32057A3670024436E /* Icon-App-40x40@2x.png in Resources */,
+				F92375BC2057A3670024436E /* README.md in Resources */,
+				F92375A82057A3670024436E /* Icon-Small-50x50@2x.png in Resources */,
+				F92375B12057A3670024436E /* Icon-App-20x20@2x.png in Resources */,
+				F92375B72057A3670024436E /* Icon-App-60x60@2x.png in Resources */,
 				F923757A205285D30024436E /* icon1.png in Resources */,
+				F92375AC2057A3670024436E /* Icon-App-20x20@1x.png in Resources */,
+				F92375B62057A3670024436E /* Icon-Small-50x50@1x.png in Resources */,
+				F92375A62057A3670024436E /* Icon-App-29x29@1x.png in Resources */,
+				F92375AD2057A3670024436E /* Icon-App-83.5x83.5@2x.png in Resources */,
 				F94F3D921F4960E900509A42 /* LaunchScreen.storyboard in Resources */,
+				F92375B92057A3670024436E /* Icon-App-76x76@1x.png in Resources */,
+				F92375A92057A3670024436E /* Icon-App-40x40@1x.png in Resources */,
+				F92375B22057A3670024436E /* Icon-App-29x29@3x.png in Resources */,
 				F94F3D8F1F4960E900509A42 /* Assets.xcassets in Resources */,
+				F92375A72057A3670024436E /* Icon-App-60x60@1x.png in Resources */,
+				F92375B52057A3670024436E /* Icon-App-60x60@3x.png in Resources */,
 				F923757C2052868E0024436E /* icon2.png in Resources */,
 				F94F3D8D1F4960E900509A42 /* Main.storyboard in Resources */,
+				F92375AB2057A3670024436E /* Icon-App-72x72@1x.png in Resources */,
+				F92375BA2057A3670024436E /* Icon-App-40x40@3x.png in Resources */,
+				F92375B42057A3670024436E /* Icon-App-72x72@2x.png in Resources */,
+				F92375AF2057A3670024436E /* ItunesArtwork@2x.png in Resources */,
+				F92375B02057A3670024436E /* Contents.json in Resources */,
+				F92375B82057A3670024436E /* Icon-App-57x57@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +376,7 @@
 				F971317F201A14C300FAD8AD /* CallenderViewController.swift in Sources */,
 				F94F3D881F4960E900509A42 /* AppDelegate.swift in Sources */,
 				F992D0E91FDAA88F00C9B0ED /* DaychooseViewController.swift in Sources */,
+				F92375842052DE340024436E /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,10 +514,10 @@
 			baseConfigurationReference = 38972CD7962D3AFE037E1649 /* Pods-huriwake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F9X9VCT8TE;
+				DEVELOPMENT_TEAM = ZVZD8MF8UT;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.huriwake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.furiwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -409,10 +529,10 @@
 			baseConfigurationReference = 52580C6391353FE0941D66B2 /* Pods-huriwake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F9X9VCT8TE;
+				DEVELOPMENT_TEAM = ZVZD8MF8UT;
 				INFOPLIST_FILE = huriwake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.huriwake;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiho.furiwake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;

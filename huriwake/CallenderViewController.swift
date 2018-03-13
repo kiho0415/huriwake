@@ -30,9 +30,16 @@ class CallenderViewController: UIViewController, FSCalendarDelegate, FSCalendarD
         // Do any additional setup after loading the view.
         table.dataSource = self
         table.delegate = self
+
+        table.tableFooterView = UIView()
         
         
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        //とりだしたデータの中に選択した日付にデータがあるか調べて
+        results = Result.loadAllOfDate(date: calendar.selectedDate ?? Date())
+        //あったらTableViewに表示
+        table.reloadData()
     }
 
     
